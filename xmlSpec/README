@@ -1,0 +1,13 @@
+Name: Joseph Savold
+
+Clemson Email Address: jsavold@clemson.edu
+
+Project no: 1
+
+Project due date: 03/10/2017
+
+Project description: Depiction of a nightmare in which the protagonist is running from a bunch of slime balls. The slime balls collide with each other. I found my background and my running man on OpenGameArt. I coded the slime physics from scratch. I also made changes to the framework such that all objects are managed by an ObjectManager singleton class instead of the Engine.
+
+The easiest part of this project: Making changes to the code that were specified in the project instructions.
+
+Problems that I had in completing this project: Getting my video to run smoothly

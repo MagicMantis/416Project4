@@ -1,0 +1,1659 @@
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:36:18: error: redeclaration of ‘SDLK_UNKNOWN’
+  SDLK_UNKNOWN  = 0,
+                  ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:49:5: note: previous declaration ‘<anonymous enum> SDLK_UNKNOWN’
+     SDLK_UNKNOWN = 0,
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:38:20: error: redeclaration of ‘SDLK_BACKSPACE’
+  SDLK_BACKSPACE  = 8,
+                    ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:53:5: note: previous declaration ‘<anonymous enum> SDLK_BACKSPACE’
+     SDLK_BACKSPACE = '\b',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:39:14: error: redeclaration of ‘SDLK_TAB’
+  SDLK_TAB  = 9,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:54:5: note: previous declaration ‘<anonymous enum> SDLK_TAB’
+     SDLK_TAB = '\t',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:40:16: error: redeclaration of ‘SDLK_CLEAR’
+  SDLK_CLEAR  = 12,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:207:5: note: previous declaration ‘<anonymous enum> SDLK_CLEAR’
+     SDLK_CLEAR = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_CLEAR),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:41:17: error: redeclaration of ‘SDLK_RETURN’
+  SDLK_RETURN  = 13,
+                 ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:51:5: note: previous declaration ‘<anonymous enum> SDLK_RETURN’
+     SDLK_RETURN = '\r',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:42:16: error: redeclaration of ‘SDLK_PAUSE’
+  SDLK_PAUSE  = 19,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:141:5: note: previous declaration ‘<anonymous enum> SDLK_PAUSE’
+     SDLK_PAUSE = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_PAUSE),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:43:17: error: redeclaration of ‘SDLK_ESCAPE’
+  SDLK_ESCAPE  = 27,
+                 ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:52:5: note: previous declaration ‘<anonymous enum> SDLK_ESCAPE’
+     SDLK_ESCAPE = '\033',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:44:16: error: redeclaration of ‘SDLK_SPACE’
+  SDLK_SPACE  = 32,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:55:5: note: previous declaration ‘<anonymous enum> SDLK_SPACE’
+     SDLK_SPACE = ' ',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:45:18: error: redeclaration of ‘SDLK_EXCLAIM’
+  SDLK_EXCLAIM  = 33,
+                  ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:56:5: note: previous declaration ‘<anonymous enum> SDLK_EXCLAIM’
+     SDLK_EXCLAIM = '!',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:46:19: error: redeclaration of ‘SDLK_QUOTEDBL’
+  SDLK_QUOTEDBL  = 34,
+                   ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:57:5: note: previous declaration ‘<anonymous enum> SDLK_QUOTEDBL’
+     SDLK_QUOTEDBL = '"',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:47:15: error: redeclaration of ‘SDLK_HASH’
+  SDLK_HASH  = 35,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:58:5: note: previous declaration ‘<anonymous enum> SDLK_HASH’
+     SDLK_HASH = '#',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:48:17: error: redeclaration of ‘SDLK_DOLLAR’
+  SDLK_DOLLAR  = 36,
+                 ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:60:5: note: previous declaration ‘<anonymous enum> SDLK_DOLLAR’
+     SDLK_DOLLAR = '$',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:49:20: error: redeclaration of ‘SDLK_AMPERSAND’
+  SDLK_AMPERSAND  = 38,
+                    ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:61:5: note: previous declaration ‘<anonymous enum> SDLK_AMPERSAND’
+     SDLK_AMPERSAND = '&',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:50:16: error: redeclaration of ‘SDLK_QUOTE’
+  SDLK_QUOTE  = 39,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:62:5: note: previous declaration ‘<anonymous enum> SDLK_QUOTE’
+     SDLK_QUOTE = '\'',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:51:20: error: redeclaration of ‘SDLK_LEFTPAREN’
+  SDLK_LEFTPAREN  = 40,
+                    ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:63:5: note: previous declaration ‘<anonymous enum> SDLK_LEFTPAREN’
+     SDLK_LEFTPAREN = '(',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:52:21: error: redeclaration of ‘SDLK_RIGHTPAREN’
+  SDLK_RIGHTPAREN  = 41,
+                     ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:64:5: note: previous declaration ‘<anonymous enum> SDLK_RIGHTPAREN’
+     SDLK_RIGHTPAREN = ')',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:53:19: error: redeclaration of ‘SDLK_ASTERISK’
+  SDLK_ASTERISK  = 42,
+                   ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:65:5: note: previous declaration ‘<anonymous enum> SDLK_ASTERISK’
+     SDLK_ASTERISK = '*',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:54:15: error: redeclaration of ‘SDLK_PLUS’
+  SDLK_PLUS  = 43,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:66:5: note: previous declaration ‘<anonymous enum> SDLK_PLUS’
+     SDLK_PLUS = '+',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:55:16: error: redeclaration of ‘SDLK_COMMA’
+  SDLK_COMMA  = 44,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:67:5: note: previous declaration ‘<anonymous enum> SDLK_COMMA’
+     SDLK_COMMA = ',',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:56:16: error: redeclaration of ‘SDLK_MINUS’
+  SDLK_MINUS  = 45,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:68:5: note: previous declaration ‘<anonymous enum> SDLK_MINUS’
+     SDLK_MINUS = '-',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:57:17: error: redeclaration of ‘SDLK_PERIOD’
+  SDLK_PERIOD  = 46,
+                 ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:69:5: note: previous declaration ‘<anonymous enum> SDLK_PERIOD’
+     SDLK_PERIOD = '.',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:58:16: error: redeclaration of ‘SDLK_SLASH’
+  SDLK_SLASH  = 47,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:70:5: note: previous declaration ‘<anonymous enum> SDLK_SLASH’
+     SDLK_SLASH = '/',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:59:13: error: redeclaration of ‘SDLK_0’
+  SDLK_0   = 48,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:71:5: note: previous declaration ‘<anonymous enum> SDLK_0’
+     SDLK_0 = '0',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:60:13: error: redeclaration of ‘SDLK_1’
+  SDLK_1   = 49,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:72:5: note: previous declaration ‘<anonymous enum> SDLK_1’
+     SDLK_1 = '1',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:61:13: error: redeclaration of ‘SDLK_2’
+  SDLK_2   = 50,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:73:5: note: previous declaration ‘<anonymous enum> SDLK_2’
+     SDLK_2 = '2',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:62:13: error: redeclaration of ‘SDLK_3’
+  SDLK_3   = 51,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:74:5: note: previous declaration ‘<anonymous enum> SDLK_3’
+     SDLK_3 = '3',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:63:13: error: redeclaration of ‘SDLK_4’
+  SDLK_4   = 52,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:75:5: note: previous declaration ‘<anonymous enum> SDLK_4’
+     SDLK_4 = '4',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:64:13: error: redeclaration of ‘SDLK_5’
+  SDLK_5   = 53,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:76:5: note: previous declaration ‘<anonymous enum> SDLK_5’
+     SDLK_5 = '5',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:65:13: error: redeclaration of ‘SDLK_6’
+  SDLK_6   = 54,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:77:5: note: previous declaration ‘<anonymous enum> SDLK_6’
+     SDLK_6 = '6',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:66:13: error: redeclaration of ‘SDLK_7’
+  SDLK_7   = 55,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:78:5: note: previous declaration ‘<anonymous enum> SDLK_7’
+     SDLK_7 = '7',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:67:13: error: redeclaration of ‘SDLK_8’
+  SDLK_8   = 56,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:79:5: note: previous declaration ‘<anonymous enum> SDLK_8’
+     SDLK_8 = '8',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:68:13: error: redeclaration of ‘SDLK_9’
+  SDLK_9   = 57,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:80:5: note: previous declaration ‘<anonymous enum> SDLK_9’
+     SDLK_9 = '9',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:69:16: error: redeclaration of ‘SDLK_COLON’
+  SDLK_COLON  = 58,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:81:5: note: previous declaration ‘<anonymous enum> SDLK_COLON’
+     SDLK_COLON = ':',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:70:20: error: redeclaration of ‘SDLK_SEMICOLON’
+  SDLK_SEMICOLON  = 59,
+                    ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:82:5: note: previous declaration ‘<anonymous enum> SDLK_SEMICOLON’
+     SDLK_SEMICOLON = ';',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:71:15: error: redeclaration of ‘SDLK_LESS’
+  SDLK_LESS  = 60,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:83:5: note: previous declaration ‘<anonymous enum> SDLK_LESS’
+     SDLK_LESS = '<',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:72:17: error: redeclaration of ‘SDLK_EQUALS’
+  SDLK_EQUALS  = 61,
+                 ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:84:5: note: previous declaration ‘<anonymous enum> SDLK_EQUALS’
+     SDLK_EQUALS = '=',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:73:18: error: redeclaration of ‘SDLK_GREATER’
+  SDLK_GREATER  = 62,
+                  ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:85:5: note: previous declaration ‘<anonymous enum> SDLK_GREATER’
+     SDLK_GREATER = '>',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:74:19: error: redeclaration of ‘SDLK_QUESTION’
+  SDLK_QUESTION  = 63,
+                   ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:86:5: note: previous declaration ‘<anonymous enum> SDLK_QUESTION’
+     SDLK_QUESTION = '?',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:75:14: error: redeclaration of ‘SDLK_AT’
+  SDLK_AT   = 64,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:87:5: note: previous declaration ‘<anonymous enum> SDLK_AT’
+     SDLK_AT = '@',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:79:21: error: redeclaration of ‘SDLK_LEFTBRACKET’
+  SDLK_LEFTBRACKET = 91,
+                     ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:91:5: note: previous declaration ‘<anonymous enum> SDLK_LEFTBRACKET’
+     SDLK_LEFTBRACKET = '[',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:80:20: error: redeclaration of ‘SDLK_BACKSLASH’
+  SDLK_BACKSLASH  = 92,
+                    ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:92:5: note: previous declaration ‘<anonymous enum> SDLK_BACKSLASH’
+     SDLK_BACKSLASH = '\\',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:81:22: error: redeclaration of ‘SDLK_RIGHTBRACKET’
+  SDLK_RIGHTBRACKET = 93,
+                      ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:93:5: note: previous declaration ‘<anonymous enum> SDLK_RIGHTBRACKET’
+     SDLK_RIGHTBRACKET = ']',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:82:16: error: redeclaration of ‘SDLK_CARET’
+  SDLK_CARET  = 94,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:94:5: note: previous declaration ‘<anonymous enum> SDLK_CARET’
+     SDLK_CARET = '^',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:83:21: error: redeclaration of ‘SDLK_UNDERSCORE’
+  SDLK_UNDERSCORE  = 95,
+                     ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:95:5: note: previous declaration ‘<anonymous enum> SDLK_UNDERSCORE’
+     SDLK_UNDERSCORE = '_',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:84:20: error: redeclaration of ‘SDLK_BACKQUOTE’
+  SDLK_BACKQUOTE  = 96,
+                    ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:96:5: note: previous declaration ‘<anonymous enum> SDLK_BACKQUOTE’
+     SDLK_BACKQUOTE = '`',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:85:13: error: redeclaration of ‘SDLK_a’
+  SDLK_a   = 97,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:97:5: note: previous declaration ‘<anonymous enum> SDLK_a’
+     SDLK_a = 'a',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:86:13: error: redeclaration of ‘SDLK_b’
+  SDLK_b   = 98,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:98:5: note: previous declaration ‘<anonymous enum> SDLK_b’
+     SDLK_b = 'b',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:87:13: error: redeclaration of ‘SDLK_c’
+  SDLK_c   = 99,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:99:5: note: previous declaration ‘<anonymous enum> SDLK_c’
+     SDLK_c = 'c',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:88:13: error: redeclaration of ‘SDLK_d’
+  SDLK_d   = 100,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:100:5: note: previous declaration ‘<anonymous enum> SDLK_d’
+     SDLK_d = 'd',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:89:13: error: redeclaration of ‘SDLK_e’
+  SDLK_e   = 101,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:101:5: note: previous declaration ‘<anonymous enum> SDLK_e’
+     SDLK_e = 'e',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:90:13: error: redeclaration of ‘SDLK_f’
+  SDLK_f   = 102,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:102:5: note: previous declaration ‘<anonymous enum> SDLK_f’
+     SDLK_f = 'f',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:91:13: error: redeclaration of ‘SDLK_g’
+  SDLK_g   = 103,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:103:5: note: previous declaration ‘<anonymous enum> SDLK_g’
+     SDLK_g = 'g',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:92:13: error: redeclaration of ‘SDLK_h’
+  SDLK_h   = 104,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:104:5: note: previous declaration ‘<anonymous enum> SDLK_h’
+     SDLK_h = 'h',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:93:13: error: redeclaration of ‘SDLK_i’
+  SDLK_i   = 105,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:105:5: note: previous declaration ‘<anonymous enum> SDLK_i’
+     SDLK_i = 'i',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:94:13: error: redeclaration of ‘SDLK_j’
+  SDLK_j   = 106,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:106:5: note: previous declaration ‘<anonymous enum> SDLK_j’
+     SDLK_j = 'j',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:95:13: error: redeclaration of ‘SDLK_k’
+  SDLK_k   = 107,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:107:5: note: previous declaration ‘<anonymous enum> SDLK_k’
+     SDLK_k = 'k',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:96:13: error: redeclaration of ‘SDLK_l’
+  SDLK_l   = 108,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:108:5: note: previous declaration ‘<anonymous enum> SDLK_l’
+     SDLK_l = 'l',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:97:13: error: redeclaration of ‘SDLK_m’
+  SDLK_m   = 109,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:109:5: note: previous declaration ‘<anonymous enum> SDLK_m’
+     SDLK_m = 'm',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:98:13: error: redeclaration of ‘SDLK_n’
+  SDLK_n   = 110,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:110:5: note: previous declaration ‘<anonymous enum> SDLK_n’
+     SDLK_n = 'n',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:99:13: error: redeclaration of ‘SDLK_o’
+  SDLK_o   = 111,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:111:5: note: previous declaration ‘<anonymous enum> SDLK_o’
+     SDLK_o = 'o',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:100:13: error: redeclaration of ‘SDLK_p’
+  SDLK_p   = 112,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:112:5: note: previous declaration ‘<anonymous enum> SDLK_p’
+     SDLK_p = 'p',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:101:13: error: redeclaration of ‘SDLK_q’
+  SDLK_q   = 113,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:113:5: note: previous declaration ‘<anonymous enum> SDLK_q’
+     SDLK_q = 'q',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:102:13: error: redeclaration of ‘SDLK_r’
+  SDLK_r   = 114,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:114:5: note: previous declaration ‘<anonymous enum> SDLK_r’
+     SDLK_r = 'r',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:103:13: error: redeclaration of ‘SDLK_s’
+  SDLK_s   = 115,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:115:5: note: previous declaration ‘<anonymous enum> SDLK_s’
+     SDLK_s = 's',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:104:13: error: redeclaration of ‘SDLK_t’
+  SDLK_t   = 116,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:116:5: note: previous declaration ‘<anonymous enum> SDLK_t’
+     SDLK_t = 't',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:105:13: error: redeclaration of ‘SDLK_u’
+  SDLK_u   = 117,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:117:5: note: previous declaration ‘<anonymous enum> SDLK_u’
+     SDLK_u = 'u',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:106:13: error: redeclaration of ‘SDLK_v’
+  SDLK_v   = 118,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:118:5: note: previous declaration ‘<anonymous enum> SDLK_v’
+     SDLK_v = 'v',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:107:13: error: redeclaration of ‘SDLK_w’
+  SDLK_w   = 119,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:119:5: note: previous declaration ‘<anonymous enum> SDLK_w’
+     SDLK_w = 'w',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:108:13: error: redeclaration of ‘SDLK_x’
+  SDLK_x   = 120,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:120:5: note: previous declaration ‘<anonymous enum> SDLK_x’
+     SDLK_x = 'x',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:109:13: error: redeclaration of ‘SDLK_y’
+  SDLK_y   = 121,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:121:5: note: previous declaration ‘<anonymous enum> SDLK_y’
+     SDLK_y = 'y',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:110:13: error: redeclaration of ‘SDLK_z’
+  SDLK_z   = 122,
+             ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:122:5: note: previous declaration ‘<anonymous enum> SDLK_z’
+     SDLK_z = 'z',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:111:17: error: redeclaration of ‘SDLK_DELETE’
+  SDLK_DELETE  = 127,
+                 ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:145:5: note: previous declaration ‘<anonymous enum> SDLK_DELETE’
+     SDLK_DELETE = '\177',
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:227:20: error: redeclaration of ‘SDLK_KP_PERIOD’
+  SDLK_KP_PERIOD  = 266,
+                    ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:169:5: note: previous declaration ‘<anonymous enum> SDLK_KP_PERIOD’
+     SDLK_KP_PERIOD = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_PERIOD),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:228:20: error: redeclaration of ‘SDLK_KP_DIVIDE’
+  SDLK_KP_DIVIDE  = 267,
+                    ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:154:5: note: previous declaration ‘<anonymous enum> SDLK_KP_DIVIDE’
+     SDLK_KP_DIVIDE = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_DIVIDE),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:229:21: error: redeclaration of ‘SDLK_KP_MULTIPLY’
+  SDLK_KP_MULTIPLY = 268,
+                     ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:155:5: note: previous declaration ‘<anonymous enum> SDLK_KP_MULTIPLY’
+     SDLK_KP_MULTIPLY = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_MULTIPLY),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:230:19: error: redeclaration of ‘SDLK_KP_MINUS’
+  SDLK_KP_MINUS  = 269,
+                   ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:156:5: note: previous declaration ‘<anonymous enum> SDLK_KP_MINUS’
+     SDLK_KP_MINUS = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_MINUS),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:231:18: error: redeclaration of ‘SDLK_KP_PLUS’
+  SDLK_KP_PLUS  = 270,
+                  ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:157:5: note: previous declaration ‘<anonymous enum> SDLK_KP_PLUS’
+     SDLK_KP_PLUS = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_PLUS),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:232:19: error: redeclaration of ‘SDLK_KP_ENTER’
+  SDLK_KP_ENTER  = 271,
+                   ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:158:5: note: previous declaration ‘<anonymous enum> SDLK_KP_ENTER’
+     SDLK_KP_ENTER = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_ENTER),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:233:20: error: redeclaration of ‘SDLK_KP_EQUALS’
+  SDLK_KP_EQUALS  = 272,
+                    ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:173:5: note: previous declaration ‘<anonymous enum> SDLK_KP_EQUALS’
+     SDLK_KP_EQUALS = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_EQUALS),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:238:14: error: redeclaration of ‘SDLK_UP’
+  SDLK_UP   = 273,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:151:5: note: previous declaration ‘<anonymous enum> SDLK_UP’
+     SDLK_UP = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_UP),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:239:15: error: redeclaration of ‘SDLK_DOWN’
+  SDLK_DOWN  = 274,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:150:5: note: previous declaration ‘<anonymous enum> SDLK_DOWN’
+     SDLK_DOWN = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_DOWN),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:240:16: error: redeclaration of ‘SDLK_RIGHT’
+  SDLK_RIGHT  = 275,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:148:5: note: previous declaration ‘<anonymous enum> SDLK_RIGHT’
+     SDLK_RIGHT = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_RIGHT),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:241:15: error: redeclaration of ‘SDLK_LEFT’
+  SDLK_LEFT  = 276,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:149:5: note: previous declaration ‘<anonymous enum> SDLK_LEFT’
+     SDLK_LEFT = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_LEFT),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:242:17: error: redeclaration of ‘SDLK_INSERT’
+  SDLK_INSERT  = 277,
+                 ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:142:5: note: previous declaration ‘<anonymous enum> SDLK_INSERT’
+     SDLK_INSERT = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_INSERT),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:243:15: error: redeclaration of ‘SDLK_HOME’
+  SDLK_HOME  = 278,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:143:5: note: previous declaration ‘<anonymous enum> SDLK_HOME’
+     SDLK_HOME = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_HOME),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:244:14: error: redeclaration of ‘SDLK_END’
+  SDLK_END  = 279,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:146:5: note: previous declaration ‘<anonymous enum> SDLK_END’
+     SDLK_END = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_END),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:245:17: error: redeclaration of ‘SDLK_PAGEUP’
+  SDLK_PAGEUP  = 280,
+                 ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:144:5: note: previous declaration ‘<anonymous enum> SDLK_PAGEUP’
+     SDLK_PAGEUP = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_PAGEUP),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:246:19: error: redeclaration of ‘SDLK_PAGEDOWN’
+  SDLK_PAGEDOWN  = 281,
+                   ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:147:5: note: previous declaration ‘<anonymous enum> SDLK_PAGEDOWN’
+     SDLK_PAGEDOWN = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_PAGEDOWN),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:251:14: error: redeclaration of ‘SDLK_F1’
+  SDLK_F1   = 282,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:126:5: note: previous declaration ‘<anonymous enum> SDLK_F1’
+     SDLK_F1 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F1),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:252:14: error: redeclaration of ‘SDLK_F2’
+  SDLK_F2   = 283,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:127:5: note: previous declaration ‘<anonymous enum> SDLK_F2’
+     SDLK_F2 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F2),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:253:14: error: redeclaration of ‘SDLK_F3’
+  SDLK_F3   = 284,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:128:5: note: previous declaration ‘<anonymous enum> SDLK_F3’
+     SDLK_F3 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F3),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:254:14: error: redeclaration of ‘SDLK_F4’
+  SDLK_F4   = 285,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:129:5: note: previous declaration ‘<anonymous enum> SDLK_F4’
+     SDLK_F4 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F4),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:255:14: error: redeclaration of ‘SDLK_F5’
+  SDLK_F5   = 286,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:130:5: note: previous declaration ‘<anonymous enum> SDLK_F5’
+     SDLK_F5 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F5),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:256:14: error: redeclaration of ‘SDLK_F6’
+  SDLK_F6   = 287,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:131:5: note: previous declaration ‘<anonymous enum> SDLK_F6’
+     SDLK_F6 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F6),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:257:14: error: redeclaration of ‘SDLK_F7’
+  SDLK_F7   = 288,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:132:5: note: previous declaration ‘<anonymous enum> SDLK_F7’
+     SDLK_F7 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F7),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:258:14: error: redeclaration of ‘SDLK_F8’
+  SDLK_F8   = 289,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:133:5: note: previous declaration ‘<anonymous enum> SDLK_F8’
+     SDLK_F8 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F8),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:259:14: error: redeclaration of ‘SDLK_F9’
+  SDLK_F9   = 290,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:134:5: note: previous declaration ‘<anonymous enum> SDLK_F9’
+     SDLK_F9 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F9),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:260:14: error: redeclaration of ‘SDLK_F10’
+  SDLK_F10  = 291,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:135:5: note: previous declaration ‘<anonymous enum> SDLK_F10’
+     SDLK_F10 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F10),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:261:14: error: redeclaration of ‘SDLK_F11’
+  SDLK_F11  = 292,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:136:5: note: previous declaration ‘<anonymous enum> SDLK_F11’
+     SDLK_F11 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F11),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:262:14: error: redeclaration of ‘SDLK_F12’
+  SDLK_F12  = 293,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:137:5: note: previous declaration ‘<anonymous enum> SDLK_F12’
+     SDLK_F12 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F12),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:263:14: error: redeclaration of ‘SDLK_F13’
+  SDLK_F13  = 294,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:174:5: note: previous declaration ‘<anonymous enum> SDLK_F13’
+     SDLK_F13 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F13),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:264:14: error: redeclaration of ‘SDLK_F14’
+  SDLK_F14  = 295,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:175:5: note: previous declaration ‘<anonymous enum> SDLK_F14’
+     SDLK_F14 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F14),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:265:14: error: redeclaration of ‘SDLK_F15’
+  SDLK_F15  = 296,
+              ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:176:5: note: previous declaration ‘<anonymous enum> SDLK_F15’
+     SDLK_F15 = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F15),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:271:19: error: redeclaration of ‘SDLK_CAPSLOCK’
+  SDLK_CAPSLOCK  = 301,
+                   ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:124:5: note: previous declaration ‘<anonymous enum> SDLK_CAPSLOCK’
+     SDLK_CAPSLOCK = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_CAPSLOCK),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:273:17: error: redeclaration of ‘SDLK_RSHIFT’
+  SDLK_RSHIFT  = 303,
+                 ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:278:5: note: previous declaration ‘<anonymous enum> SDLK_RSHIFT’
+     SDLK_RSHIFT = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_RSHIFT),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:274:17: error: redeclaration of ‘SDLK_LSHIFT’
+  SDLK_LSHIFT  = 304,
+                 ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:274:5: note: previous declaration ‘<anonymous enum> SDLK_LSHIFT’
+     SDLK_LSHIFT = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_LSHIFT),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:275:16: error: redeclaration of ‘SDLK_RCTRL’
+  SDLK_RCTRL  = 305,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:277:5: note: previous declaration ‘<anonymous enum> SDLK_RCTRL’
+     SDLK_RCTRL = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_RCTRL),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:276:16: error: redeclaration of ‘SDLK_LCTRL’
+  SDLK_LCTRL  = 306,
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:273:5: note: previous declaration ‘<anonymous enum> SDLK_LCTRL’
+     SDLK_LCTRL = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_LCTRL),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:277:15: error: redeclaration of ‘SDLK_RALT’
+  SDLK_RALT  = 307,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:279:5: note: previous declaration ‘<anonymous enum> SDLK_RALT’
+     SDLK_RALT = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_RALT),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:278:15: error: redeclaration of ‘SDLK_LALT’
+  SDLK_LALT  = 308,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:275:5: note: previous declaration ‘<anonymous enum> SDLK_LALT’
+     SDLK_LALT = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_LALT),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:283:15: error: redeclaration of ‘SDLK_MODE’
+  SDLK_MODE  = 313,  /**< "Alt Gr" key */
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:282:5: note: previous declaration ‘<anonymous enum> SDLK_MODE’
+     SDLK_MODE = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_MODE),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:289:15: error: redeclaration of ‘SDLK_HELP’
+  SDLK_HELP  = 315,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:187:5: note: previous declaration ‘<anonymous enum> SDLK_HELP’
+     SDLK_HELP = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_HELP),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:291:17: error: redeclaration of ‘SDLK_SYSREQ’
+  SDLK_SYSREQ  = 317,
+                 ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:205:5: note: previous declaration ‘<anonymous enum> SDLK_SYSREQ’
+     SDLK_SYSREQ = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_SYSREQ),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:293:15: error: redeclaration of ‘SDLK_MENU’
+  SDLK_MENU  = 319,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:188:5: note: previous declaration ‘<anonymous enum> SDLK_MENU’
+     SDLK_MENU = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_MENU),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:294:16: error: redeclaration of ‘SDLK_POWER’
+  SDLK_POWER  = 320,  /**< Power Macintosh power key */
+                ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:172:5: note: previous declaration ‘<anonymous enum> SDLK_POWER’
+     SDLK_POWER = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_POWER),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:296:15: error: redeclaration of ‘SDLK_UNDO’
+  SDLK_UNDO  = 322,  /**< Atari keyboard has Undo */
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:192:5: note: previous declaration ‘<anonymous enum> SDLK_UNDO’
+     SDLK_UNDO = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_UNDO),
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:306:15: error: redeclaration of ‘KMOD_NONE’
+  KMOD_NONE  = 0x0000,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:319:5: note: previous declaration ‘SDL_Keymod KMOD_NONE’
+     KMOD_NONE = 0x0000,
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:307:15: error: redeclaration of ‘KMOD_LSHIFT’
+  KMOD_LSHIFT= 0x0001,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:320:5: note: previous declaration ‘SDL_Keymod KMOD_LSHIFT’
+     KMOD_LSHIFT = 0x0001,
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:308:15: error: redeclaration of ‘KMOD_RSHIFT’
+  KMOD_RSHIFT= 0x0002,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:321:5: note: previous declaration ‘SDL_Keymod KMOD_RSHIFT’
+     KMOD_RSHIFT = 0x0002,
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:309:15: error: redeclaration of ‘KMOD_LCTRL’
+  KMOD_LCTRL = 0x0040,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:322:5: note: previous declaration ‘SDL_Keymod KMOD_LCTRL’
+     KMOD_LCTRL = 0x0040,
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:310:15: error: redeclaration of ‘KMOD_RCTRL’
+  KMOD_RCTRL = 0x0080,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:323:5: note: previous declaration ‘SDL_Keymod KMOD_RCTRL’
+     KMOD_RCTRL = 0x0080,
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:311:15: error: redeclaration of ‘KMOD_LALT’
+  KMOD_LALT  = 0x0100,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:324:5: note: previous declaration ‘SDL_Keymod KMOD_LALT’
+     KMOD_LALT = 0x0100,
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:312:15: error: redeclaration of ‘KMOD_RALT’
+  KMOD_RALT  = 0x0200,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:325:5: note: previous declaration ‘SDL_Keymod KMOD_RALT’
+     KMOD_RALT = 0x0200,
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:315:15: error: redeclaration of ‘KMOD_NUM’
+  KMOD_NUM   = 0x1000,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:328:5: note: previous declaration ‘SDL_Keymod KMOD_NUM’
+     KMOD_NUM = 0x1000,
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:316:15: error: redeclaration of ‘KMOD_CAPS’
+  KMOD_CAPS  = 0x2000,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:329:5: note: previous declaration ‘SDL_Keymod KMOD_CAPS’
+     KMOD_CAPS = 0x2000,
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:317:15: error: redeclaration of ‘KMOD_MODE’
+  KMOD_MODE  = 0x4000,
+               ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:330:5: note: previous declaration ‘SDL_Keymod KMOD_MODE’
+     KMOD_MODE = 0x4000,
+     ^
+In file included from engine.cpp:13:0:
+/usr/include/SDL/SDL_keysym.h:318:18: error: redeclaration of ‘KMOD_RESERVED’
+  KMOD_RESERVED = 0x8000
+                  ^
+In file included from /usr/local/include/SDL2/SDL_keyboard.h:33:0,
+                 from /usr/local/include/SDL2/SDL_events.h:34,
+                 from /usr/local/include/SDL2/SDL.h:41,
+                 from drawable.h:3,
+                 from sprite.h:4,
+                 from engine.cpp:5:
+/usr/local/include/SDL2/SDL_keycode.h:331:5: note: previous declaration ‘SDL_Keymod KMOD_RESERVED’
+     KMOD_RESERVED = 0x8000
+     ^
+engine.cpp: In member function ‘void Engine::play()’:
+engine.cpp:126:43: warning: comparison between ‘enum SDL_Scancode’ and ‘enum<anonymous>’ [-Wenum-compare]
+         if ( event.key.keysym.scancode == SDLK_RIGHT ) {
+                                           ^
+engine.cpp:130:43: warning: comparison between ‘enum SDL_Scancode’ and ‘enum<anonymous>’ [-Wenum-compare]
+         if ( event.key.keysym.scancode == SDLK_LEFT ) {
+                                           ^
+make: *** [engine.o] Error 1
