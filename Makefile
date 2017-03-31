@@ -16,6 +16,7 @@ OBJS = \
 	frame.o \
 	frameFactory.o \
 	frameGenerator.o \
+	objectManager.o \
 	sprite.o \
 	multisprite.o \
 	twoWayMultiSprite.o \
@@ -24,7 +25,6 @@ OBJS = \
 	smog.o \
 	player.o \
 	rain.o \
-	objectManager.o \
 	clock.o \
 	engine.o \
 	main.o

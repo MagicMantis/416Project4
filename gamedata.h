@@ -26,12 +26,13 @@ public:
   void updateLeft(bool setLeft) { leftKey = setLeft; }
   void updateRight(bool setRight) { rightKey = setRight; }
   static float clamp(const float, const float, const float);
-
+  int generateID() { return instance_id++; }
 private:
   ParseXML parser;
   const map<std::string, std::string> gameData;
   int mouseX, mouseY;
   bool rightKey, leftKey;
+  int instance_id;
 
   Gamedata(const std::string& fn = "xmlSpec/game.xml");
   Gamedata(const Gamedata&);

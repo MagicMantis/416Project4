@@ -6,7 +6,9 @@
 #include "gamedata.h"
 
 ObjectManager& ObjectManager::getInstance() {
-  static ObjectManager objectManager;
+  int gridWidth = Gamedata::getInstance().getXmlInt("grid/width");
+  int gridHeight = Gamedata::getInstance().getXmlInt("grid/height");
+  static ObjectManager objectManager(gridWidth, gridHeight);
   return objectManager;
 }
 

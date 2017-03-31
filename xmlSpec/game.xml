@@ -18,6 +18,23 @@
 <gravityConstant>14.0</gravityConstant>
 <dampingConstant>0.10</dampingConstant>
 <maxSpeed>400.0</maxSpeed>
+
+<view>
+  <width>700</width>
+  <height>384</height>
+</view>
+
+<grid>
+  <width>200</width>
+  <height>200</height>
+</grid>
+
+<world>
+  <width>2000</width>
+  <height>384</height>
+  <ground>330</ground>
+</world>
+
 <groundHeight>20.0</groundHeight>
 <sludgeCount>200</sludgeCount>
 
@@ -25,17 +42,6 @@
   <count>200</count>
   <speed>100</speed>
 </rain>
-
-<view>
-  <width>700</width>
-  <height>384</height>
-</view>
-
-<world>
-  <width>2000</width>
-  <height>384</height>
-  <ground>330</ground>
-</world>
 
 <farbuildings>
   <file>images/far-buildings2.png</file>
@@ -83,7 +89,7 @@
   <frameInterval>60</frameInterval>
   <speedX>0</speedX>
   <speedY>0</speedY>
-  <jumpPower>180.0</jumpPower>
+  <jumpPower>250.0</jumpPower>
   <transparency>true</transparency>
   <acceleration>30.0</acceleration>
   <deceleration>10.0</deceleration>

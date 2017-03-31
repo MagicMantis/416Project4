@@ -53,7 +53,7 @@ void Player::decelerate(float amount) {
 void Player::jump() {
 	if (!onGround()) return;
 	float jumpPower = Gamedata::getInstance().getXmlFloat("player/jumpPower");
-	setVelocityY(getVelocityY() - jumpPower);
+	setVelocityY(-jumpPower);
 }
 
 void Player::stop() {
