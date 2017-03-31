@@ -15,11 +15,16 @@
 <maxFrames>1200</maxFrames>
 <username>jsavold</username>
 
-<gravityConstant>10.0</gravityConstant>
+<gravityConstant>14.0</gravityConstant>
 <dampingConstant>0.10</dampingConstant>
 <maxSpeed>400.0</maxSpeed>
 <groundHeight>20.0</groundHeight>
 <sludgeCount>200</sludgeCount>
+
+<rain>
+  <count>200</count>
+  <speed>100</speed>
+</rain>
 
 <view>
   <width>700</width>
@@ -78,9 +83,10 @@
   <frameInterval>60</frameInterval>
   <speedX>0</speedX>
   <speedY>0</speedY>
-  <jumpPower>150.0</jumpPower>
+  <jumpPower>180.0</jumpPower>
   <transparency>true</transparency>
   <acceleration>30.0</acceleration>
+  <deceleration>10.0</deceleration>
   <maxSpeed>160.0</maxSpeed>
 </player>
 

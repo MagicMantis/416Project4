@@ -23,6 +23,7 @@ OBJS = \
 	sludge.o \
 	smog.o \
 	player.o \
+	rain.o \
 	objectManager.o \
 	clock.o \
 	engine.o \

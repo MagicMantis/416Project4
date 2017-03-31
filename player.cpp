@@ -27,10 +27,11 @@ void Player::update(Uint32 ticks) {
 
 	//acceleration
 	float accel = Gamedata::getInstance().getXmlFloat("player/acceleration");
+	float decel = Gamedata::getInstance().getXmlFloat("player/deceleration");
 	if (Gamedata::getInstance().getRightKey()) accelerate(accel);
-	else if (getVelocityX() > 0) decelerate(accel);
+	else if (getVelocityX() > 0) decelerate(decel);
 	if (Gamedata::getInstance().getLeftKey()) accelerate(-accel);
-	else if (getVelocityX() < 0) decelerate(accel);
+	else if (getVelocityX() < 0) decelerate(decel);
 }
 
 void Player::draw() const {

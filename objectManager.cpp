@@ -2,6 +2,7 @@
 #include "sludge.h"
 #include "smog.h"
 #include "player.h"
+#include "rain.h"
 #include "gamedata.h"
 
 ObjectManager& ObjectManager::getInstance() {
@@ -24,6 +25,13 @@ void ObjectManager::initObjects() {
 		pos[0] = Gamedata::getInstance().getRandInRange(width, width+200);
 		pos[1] = Gamedata::getInstance().getRandInRange(200, 400);
 		addObject( new Sludge(pos) );
+	}
+	int rainCount = Gamedata::getInstance().getXmlInt("rain/count");
+	float rainSpeed = Gamedata::getInstance().getXmlFloat("rain/speed");
+	int w = Gamedata::getInstance().getXmlInt("view/width");
+	int h = Gamedata::getInstance().getXmlInt("view/height");
+	for (int i = 0; i < rainCount; i++) {
+		addObject(new Rain(i*(w/rainCount), (rand()%h), rand()%3+3, h, rainSpeed));
 	}
 	for (int i = 0; i < 20; i++) {
 		addObject( new Smog() );
