@@ -11,7 +11,6 @@
  * ObjectManager class: this class contains a vector of all game
  * objects and manages updating and rendering them each frame.
  */
-class Collider;
 class ObjectManager {
 public:
 	static ObjectManager& getInstance();
@@ -30,14 +29,14 @@ public:
 	Drawable* getObject(const std::string&);
 	std::vector<Drawable*>* getObjectsOfType(const std::string&);
 
-	void changeGrid(int, int, int, int);
+	void changeGrid(int, int, int, int, Collider*);
 private:
-	ObjectManager(int w, int h) : gameObjects(), instanceSets(), 
-		grid(new std::list<Collider>[w*h]), instance_id(0) {}
+	ObjectManager(int w, int h);
 	std::vector<Drawable*> gameObjects;
 	std::unordered_map<std::string, std::vector<Drawable*>*> instanceSets;
-	std::list<Collider> *grid;
-	int instance_id;
+	int gridXs, gridYs;
+	std::list<Collider*> *grid;
+	int gridWidth, gridHeight;
 };
 
 #endif

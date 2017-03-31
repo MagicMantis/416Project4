@@ -50,6 +50,17 @@ void ObjectManager::addObject(Drawable* obj) {
         instanceSets[obj->getName()] = new std::vector<Drawable*>();
         instanceSets[obj->getName()]->push_back(obj);
     }
+    Collider* collider = dynamic_cast<Collider*>(obj);
+    if (collider) {
+    	int x = (int) collider->getX() / gridWidth;
+    	int y = (int) collider->getY() / gridHeight;
+    	grid[x*gridYs+y].push_back(collider);
+    }
+}
+
+void ObjectManager::changeGrid(int x1, int y1, int x2, int y2, Collider* collider) {
+	grid[x1*gridYs+y1].remove_if([collider](Collider* c){ return c->getID() == collider->getID();});
+	grid[x2*gridYs+y2].push_back(collider);
 }
 
 //update all game objects
@@ -78,3 +89,8 @@ Drawable* ObjectManager::getObject(const std::string& type) {
 std::vector<Drawable*>* ObjectManager::getObjectsOfType(const std::string& type) {
 	return instanceSets[type];
 }
+
+ObjectManager::ObjectManager(int w, int h) : gameObjects(), instanceSets(), 
+	gridXs(Gamedata::getInstance().getXmlInt("world/width") / w), 
+	gridYs(Gamedata::getInstance().getXmlInt("world/height") / h),
+	grid(new std::list<Collider*>[gridXs*gridYs]), gridWidth(w), gridHeight(h) {}

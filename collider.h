@@ -8,13 +8,17 @@ public:
     	Drawable(n,pos,vel), width(w), height(h), 
     	gridX(pos[0]/Gamedata::getInstance().getXmlInt("grid/width")),
     	gridY(pos[0]/Gamedata::getInstance().getXmlInt("grid/height")),
-    	id(Gamedata::getInstance().generateId()) { }
+    	id(Gamedata::getInstance().generateID()) { }
 
 	Collider(const Collider& s) : Drawable(s), width(s.width), height(s.height),
 		gridX(s.gridX), gridY(s.gridY), id(s.id) { }
 
 	float getWidth() const { return width; }
+	void setWidth(float w) { width = w; }
 	float getHeight() const { return width; }
+	void setHeight(float h) { height = h; }
+
+	int getID() const { return id; }
 
 	virtual void draw() const = 0;
 	virtual void update(Uint32 ticks) = 0;
