@@ -1,10 +1,12 @@
+#include <random>
+#include <iostream>
+#include <iomanip>
 #include "objectManager.h"
 #include "sludge.h"
 #include "smog.h"
 #include "player.h"
 #include "rain.h"
 #include "gamedata.h"
-#include <iostream>
 
 ObjectManager& ObjectManager::getInstance() {
   int gridWidth = Gamedata::getInstance().getXmlInt("grid/width");
@@ -15,19 +17,27 @@ ObjectManager& ObjectManager::getInstance() {
 
 void ObjectManager::initObjects() {
 	addObject( new Player("player") );
+
 	int sludgeCount = Gamedata::getInstance().getXmlInt("sludgeCount")/2;
+  	float u = Gamedata::getInstance().getXmlFloat("sludge/radius"); //Mean size
+  	constexpr float d = 0.5f; //Std deviation
+	
+	std::random_device rd;
+	std::mt19937 mt(rd());
+	std::normal_distribution<float>dist(u,d);
+
 	for (int i = 0; i < sludgeCount; i++) {
 		Vector2f pos;
 		pos[0] = Gamedata::getInstance().getRandInRange(-200, 0);
 		pos[1] = Gamedata::getInstance().getRandInRange(200, 400);
-		addObject( new Sludge(pos) );
+		addObject( new Sludge(pos, dist(mt)) );
 	}
 	for (int i = 0; i < sludgeCount; i++) {
 		Vector2f pos;
 		int width = Gamedata::getInstance().getXmlInt("world/width");
 		pos[0] = Gamedata::getInstance().getRandInRange(width, width+200);
 		pos[1] = Gamedata::getInstance().getRandInRange(200, 400);
-		addObject( new Sludge(pos) );
+		addObject( new Sludge(pos, dist(mt)) );
 	}
 	int rainCount = Gamedata::getInstance().getXmlInt("rain/count");
 	float rainSpeed = Gamedata::getInstance().getXmlFloat("rain/speed");

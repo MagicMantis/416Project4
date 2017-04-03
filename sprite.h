@@ -6,7 +6,7 @@
 class Sprite : public Collider {
 public:
   Sprite(const std::string&);
-  Sprite(const std::string&, const Vector2f&);
+  Sprite(const std::string&, const Vector2f&, float=1.0);
   Sprite(const Sprite&);
   virtual ~Sprite() { } 
   Sprite& operator=(const Sprite&);
@@ -27,5 +27,6 @@ private:
   int worldHeight;
   int frameWidth;
   int frameHeight;
+  float scale;
 };
 #endif

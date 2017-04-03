@@ -6,7 +6,8 @@
 
 Sludge::Sludge() : Sprite("sludge", Vector2f(
 	Gamedata::getInstance().getRandInRange(0, 200),
-	Gamedata::getInstance().getRandInRange(0, 200))),
+	Gamedata::getInstance().getRandInRange(0, 200)),
+	1.0),
 	radius(Gamedata::getInstance().getXmlFloat("sludge/radius")),
 	player(nullptr),
 	gravity(Gamedata::getInstance().getXmlFloat("gravityConstant")),
@@ -14,8 +15,9 @@ Sludge::Sludge() : Sprite("sludge", Vector2f(
 	maxSpeed(Gamedata::getInstance().getXmlFloat("maxSpeed"))
 { }
 
-Sludge::Sludge(const Vector2f& pos) : Sprite("sludge", pos),
-	radius(Gamedata::getInstance().getXmlFloat("sludge/radius")),
+Sludge::Sludge(const Vector2f& pos, float r) : Sprite("sludge", pos, 
+	r/Gamedata::getInstance().getXmlFloat("sludge/radius")),
+	radius(r),
 	player(nullptr),
 	gravity(Gamedata::getInstance().getXmlFloat("gravityConstant")),
 	damping(Gamedata::getInstance().getXmlFloat("dampingConstant")),

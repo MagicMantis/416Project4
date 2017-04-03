@@ -27,10 +27,10 @@ Frame& Frame::operator=(const Frame& rhs) {
   return *this;
 }
 
-void Frame::draw(int x, int y, bool doFlip) const {
+void Frame::draw(int x, int y, bool doFlip, float scale) const {
   x -= Viewport::getInstance().getX();
   y -= Viewport::getInstance().getY();
-  SDL_Rect dest = {x, y, width, height };
+  SDL_Rect dest = {x, y, (int)(width*scale), (int)(height*scale)};
   SDL_RendererFlip flip = (doFlip ? SDL_FLIP_HORIZONTAL : SDL_FLIP_NONE);
   SDL_RenderCopyEx(renderer, texture, NULL, &dest, 0, NULL, flip);
 }

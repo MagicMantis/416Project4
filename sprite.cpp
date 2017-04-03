@@ -16,10 +16,11 @@ Sprite::Sprite(const std::string& name) :
   worldWidth(Gamedata::getInstance().getXmlInt("world/width")),
   worldHeight(Gamedata::getInstance().getXmlInt("world/height")),
   frameWidth(frame->getWidth()),
-  frameHeight(frame->getHeight())
+  frameHeight(frame->getHeight()),
+  scale(1.0)
 { }
 
-Sprite::Sprite(const std::string& name, const Vector2f& pos) :
+Sprite::Sprite(const std::string& name, const Vector2f& pos, float s) :
   Collider(name, pos, Vector2f(0,0),
       Gamedata::getInstance().getXmlFloat(name+"/width"), 
       Gamedata::getInstance().getXmlFloat(name+"/height")),
@@ -27,7 +28,8 @@ Sprite::Sprite(const std::string& name, const Vector2f& pos) :
   worldWidth(Gamedata::getInstance().getXmlInt("world/width")),
   worldHeight(Gamedata::getInstance().getXmlInt("world/height")),
   frameWidth(frame->getWidth()),
-  frameHeight(frame->getHeight())
+  frameHeight(frame->getHeight()),
+  scale(s)
 { }
 
 Sprite::Sprite(const Sprite& s) :
@@ -36,7 +38,8 @@ Sprite::Sprite(const Sprite& s) :
   worldWidth(Gamedata::getInstance().getXmlInt("world/width")),
   worldHeight(Gamedata::getInstance().getXmlInt("world/height")),
   frameWidth(s.getFrame()->getWidth()),
-  frameHeight(s.getFrame()->getHeight())
+  frameHeight(s.getFrame()->getHeight()),
+  scale(s.scale)
 { }
 
 Sprite& Sprite::operator=(const Sprite& rhs) {
@@ -46,6 +49,7 @@ Sprite& Sprite::operator=(const Sprite& rhs) {
   worldHeight = rhs.worldHeight;
   frameWidth = rhs.frameWidth;
   frameHeight = rhs.frameHeight;
+  scale = rhs.scale;
   return *this;
 }
 

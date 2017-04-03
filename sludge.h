@@ -4,7 +4,7 @@
 class Sludge : public Sprite {
 public:
 	Sludge();
-	Sludge(const Vector2f&);
+	Sludge(const Vector2f&, float);
 	Sludge(const Sludge&) = delete;
 	Sludge& operator=(const Sludge&) = delete;
 	~Sludge() { }
