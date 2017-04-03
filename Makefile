@@ -11,6 +11,7 @@ OBJS = \
 	parseXML.o \
 	gamedata.o \
 	viewport.o \
+	HUD.o \
 	world.o \
 	unpack.o \
 	frame.o \
