@@ -19,11 +19,15 @@ void HUD::draw(int fps) const {
 		SDL_RenderDrawRect(rend,&dst);
 
   		IOmod& io = IOmod::getInstance();
-  		io.writeText("Tracking: "+Viewport::getInstance().getObjectToTrack()->getName(), 30, 30);
+  		io.writeText("Tracking: "+Viewport::getInstance().getObjectToTrack()->getName(), x+5, y+10);
 
 		std::stringstream strm;
 		strm << "Average FPS: " << fps;
-		io.writeText(strm.str(), 30, 60);
+		io.writeText(strm.str(), x+5, y+40);
+		io.writeText("A: run left", x+5, y+70);
+		io.writeText("D: run right", x+5, y+100);
+		io.writeText("Space: jump", x+5, y+130);
+		io.writeText("Avoid the sludge!", x+5, y+170);
 	}
 }
 
