@@ -55,7 +55,7 @@ void ObjectManager::addObject(Drawable* obj) {
     if (collider) {
     	int x = (int) collider->getX() / gridWidth;
     	int y = (int) collider->getY() / gridHeight;
-    	changeGrid(0,0,x,y,collider);
+    	changeGrid(-1,-1,x,y,collider);
     }
 }
 
@@ -101,8 +101,4 @@ std::vector<Drawable*>* ObjectManager::getObjectsOfType(const std::string& type)
 ObjectManager::ObjectManager(int w, int h) : gameObjects(), instanceSets(), 
 	gridXs(Gamedata::getInstance().getXmlInt("world/width") / w + 1), 
 	gridYs(Gamedata::getInstance().getXmlInt("world/height") / h + 1),
-	grid(new std::list<Collider*>[gridXs*gridYs]), gridWidth(w), gridHeight(h) {
-
-		std::cout << gridXs << std::endl;
-		std::cout << gridYs << std::endl;
-	}
+	grid(new std::list<Collider*>[gridXs*gridYs]), gridWidth(w), gridHeight(h) {}

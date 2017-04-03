@@ -21,13 +21,16 @@ void Player::update(Uint32 ticks) {
 
 	//gravity
 	if (!onGround()) {
-		float gravity = Gamedata::getInstance().getXmlFloat("gravityConstant");
+		float gravity = Gamedata::getInstance().getXmlFloat("gravityConstant") 
+			* static_cast<float>(ticks) * 0.04;
 		setVelocityY(getVelocityY() + gravity);
 	}
 
 	//acceleration
-	float accel = Gamedata::getInstance().getXmlFloat("player/acceleration");
-	float decel = Gamedata::getInstance().getXmlFloat("player/deceleration");
+	float accel = Gamedata::getInstance().getXmlFloat("player/acceleration")
+		* static_cast<float>(ticks) * 0.04;
+	float decel = Gamedata::getInstance().getXmlFloat("player/deceleration")
+		* static_cast<float>(ticks) * 0.04;
 	if (Gamedata::getInstance().getRightKey()) accelerate(accel);
 	else if (getVelocityX() > 0) decelerate(decel);
 	if (Gamedata::getInstance().getLeftKey()) accelerate(-accel);

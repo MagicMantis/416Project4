@@ -29,7 +29,7 @@ public:
 	int getID() const { return id; }
 
 	virtual void draw() const = 0;
-	virtual void update(Uint32 ticks) = 0;
+	virtual void update(Uint32 ticks);
 	virtual const Frame* getFrame() const = 0;
 private:
 	float width, height;

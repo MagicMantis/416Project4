@@ -1,3 +1,6 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+
 #include "twoWayMultiSprite.h"
 
 class Player : public TwoWayMultiSprite {
@@ -15,3 +18,5 @@ public:
 private:
 	bool onGround();
 };
+
+#endif

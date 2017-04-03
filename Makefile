@@ -17,6 +17,7 @@ OBJS = \
 	frameFactory.o \
 	frameGenerator.o \
 	objectManager.o \
+	collider.o \
 	sprite.o \
 	multisprite.o \
 	twoWayMultiSprite.o \
