@@ -11,7 +11,8 @@ public:
   Frame(const Frame&);
   Frame& operator=(const Frame&);
 
-  void draw(int x, int y, bool=false, float=1.0) const;
+  void drawScaled(int x, int y, bool=false, float=1.0) const;
+  void draw(int x, int y, bool=false) const;
   void draw(int sx, int sy, int dx, int dy) const;
 
   SDL_Texture* getTexture() const { return texture; }

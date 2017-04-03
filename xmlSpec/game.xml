@@ -30,7 +30,7 @@
 </grid>
 
 <world>
-  <width>20000000</width>
+  <width>10000</width>
   <height>480</height>
   <ground>430</ground>
 </world>
