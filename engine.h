@@ -6,6 +6,7 @@
 #include "world.h"
 #include "viewport.h"
 #include "objectManager.h"
+#include "HUD.h"
 
 class Engine {
 public:
@@ -22,6 +23,7 @@ private:
   SDL_Renderer * const renderer;
   World far, back, fore;
   Viewport& viewport;
+  HUD hud;
 
   // ObjectManager objectManager;
   // std::vector<Drawable*> sprites;

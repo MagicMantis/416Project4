@@ -20,8 +20,8 @@
 <maxSpeed>400.0</maxSpeed>
 
 <view>
-  <width>700</width>
-  <height>368</height>
+  <width>854</width>
+  <height>480</height>
 </view>
 
 <grid>
@@ -31,8 +31,8 @@
 
 <world>
   <width>20000000</width>
-  <height>384</height>
-  <ground>330</ground>
+  <height>480</height>
+  <ground>430</ground>
 </world>
 
 <groundHeight>20.0</groundHeight>
@@ -43,9 +43,16 @@
   <speed>100</speed>
 </rain>
 
+<HUD>
+  <x>0</x>
+  <y>0</y>
+  <width>200</width>
+  <height>100</height>
+</HUD>
+
 <farbuildings>
-  <file>images/far-buildings2.png</file>
-  <factor>3</factor>
+  <file>images/bkgnd.png</file>
+  <factor>0</factor>
   <transparency>false</transparency>
 </farbuildings>
 

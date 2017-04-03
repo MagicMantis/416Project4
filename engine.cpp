@@ -27,6 +27,10 @@ Engine::Engine() :
   back("backbuildings", Gamedata::getInstance().getXmlInt("backbuildings/factor") ),
   fore("foreground", Gamedata::getInstance().getXmlInt("foreground/factor") ),
   viewport( Viewport::getInstance() ),
+  hud(Gamedata::getInstance().getXmlInt("HUD/x"),
+    Gamedata::getInstance().getXmlInt("HUD/y"),
+    Gamedata::getInstance().getXmlInt("HUD/width"),
+    Gamedata::getInstance().getXmlInt("HUD/height")),
   // sprites(),
   currentSprite(-1),
 
@@ -36,20 +40,19 @@ Engine::Engine() :
   //sprites.push_back( new Sludge() );
   switchSprite();
   std::cout << "Loading complete" << std::endl;
+  hud.display(3000);
 }
 
 void Engine::draw() const {
   far.draw();
   back.draw();
   fore.draw();
-  std::stringstream strm;
-  strm << "fps: " << clock.getAvgFps();
-  io.writeText(strm.str(), 30, 60);
 
   //for(auto* s : sprites) s->draw();
   ObjectManager::getInstance().drawObjects();
 
   viewport.draw();
+  hud.draw(clock.getAvgFps());
   SDL_RenderPresent(renderer);
 }
 
@@ -60,6 +63,7 @@ void Engine::update(Uint32 ticks) {
   back.update();
   fore.update();
   viewport.update(); // always update viewport last
+  hud.update(ticks);
 }
 
 void Engine::switchSprite(){
@@ -109,6 +113,10 @@ void Engine::play() {
             break;
           case SDLK_t:
             switchSprite();
+            break;
+          case SDLK_F1:
+            if (hud.getTime() == 0) hud.display(1000000);
+            else hud.display(0);
             break;
           case SDLK_F4:
             if (!makeVideo) {

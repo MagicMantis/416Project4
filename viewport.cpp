@@ -26,7 +26,7 @@ void Viewport::setObjectToTrack(const Drawable *obj) {
 
 void Viewport::draw() const {
   IOmod& io = IOmod::getInstance();
-  io.writeText("Tracking "+objectToTrack->getName(), 30, 30);
+  //io.writeText("Tracking "+objectToTrack->getName(), 30, 30);
 
   int nameWidth = gdata.getXmlInt("nameWidth");
   int titleWidth = gdata.getXmlInt("titleWidth");
