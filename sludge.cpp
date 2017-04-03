@@ -40,18 +40,26 @@ void Sludge::update(Uint32 ticks) {
 	}
 
 	//other objects
-	for (Drawable* d : *ObjectManager::getInstance().getObjectsOfType("sludge")) {
-		if (d == this) continue;
-		Sludge* sludge = (Sludge*) d;
-		float dist = getDistance(sludge);
-		float xratio = (getX()-sludge->getX()) / dist;
-		float yratio = (getY()-sludge->getY()) / dist;
-		if (dist < radius) {
-			float magnitude = gravityConstant / sqrt((radius - dist) / radius);
-			accel[0] += xratio * magnitude;
-			accel[1] += yratio * magnitude;
+	for (int xx = -1; xx <= 1; xx++)
+		for (int yy = -1; yy <= 1; yy++) {
+			auto* objs = ObjectManager::getInstance().getObjectsInGrid(getGridX()+xx, getGridY()+yy);
+			if (objs) {
+				for (Collider* c : *objs) {
+					if (c == this) continue;
+					Sludge* sludge = dynamic_cast<Sludge*>(c);
+					if (sludge) {
+						float dist = getDistance(sludge);
+						float xratio = (getX()-sludge->getX()) / dist;
+						float yratio = (getY()-sludge->getY()) / dist;
+						if (dist < radius) {
+							float magnitude = gravityConstant / sqrt((radius - dist) / radius);
+							accel[0] += xratio * magnitude;
+							accel[1] += yratio * magnitude;
+						}
+					}
+				}
+			}
 		}
-	}
 
 	//seek target
 	Vector2f target = ObjectManager::getInstance().getObject("player")->getPosition();

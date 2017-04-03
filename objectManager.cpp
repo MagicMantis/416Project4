@@ -4,6 +4,7 @@
 #include "player.h"
 #include "rain.h"
 #include "gamedata.h"
+#include <iostream>
 
 ObjectManager& ObjectManager::getInstance() {
   int gridWidth = Gamedata::getInstance().getXmlInt("grid/width");
@@ -54,13 +55,20 @@ void ObjectManager::addObject(Drawable* obj) {
     if (collider) {
     	int x = (int) collider->getX() / gridWidth;
     	int y = (int) collider->getY() / gridHeight;
-    	grid[x*gridYs+y].push_back(collider);
+    	changeGrid(0,0,x,y,collider);
     }
 }
 
 void ObjectManager::changeGrid(int x1, int y1, int x2, int y2, Collider* collider) {
-	grid[x1*gridYs+y1].remove_if([collider](Collider* c){ return c->getID() == collider->getID();});
-	grid[x2*gridYs+y2].push_back(collider);
+	if (x1 >= 0 && x1 < gridXs && y1 >= 0 && y1 < gridYs)
+		grid[x1*gridYs+y1].remove_if([collider](Collider* c){ return c->getID() == collider->getID();});
+	if (x2 >= 0 && x2 < gridXs && y2 >= 0 && y2 < gridYs)
+		grid[x2*gridYs+y2].push_back(collider);
+}
+
+std::list<Collider*>* ObjectManager::getObjectsInGrid(int x, int y) const {
+	if (x < 0 || x >= gridXs || y < 0 || y >= gridYs) return nullptr;
+	return &grid[x*gridYs+y];
 }
 
 //update all game objects
@@ -91,6 +99,10 @@ std::vector<Drawable*>* ObjectManager::getObjectsOfType(const std::string& type)
 }
 
 ObjectManager::ObjectManager(int w, int h) : gameObjects(), instanceSets(), 
-	gridXs(Gamedata::getInstance().getXmlInt("world/width") / w), 
-	gridYs(Gamedata::getInstance().getXmlInt("world/height") / h),
-	grid(new std::list<Collider*>[gridXs*gridYs]), gridWidth(w), gridHeight(h) {}
+	gridXs(Gamedata::getInstance().getXmlInt("world/width") / w + 1), 
+	gridYs(Gamedata::getInstance().getXmlInt("world/height") / h + 1),
+	grid(new std::list<Collider*>[gridXs*gridYs]), gridWidth(w), gridHeight(h) {
+
+		std::cout << gridXs << std::endl;
+		std::cout << gridYs << std::endl;
+	}

@@ -30,6 +30,7 @@ public:
 	std::vector<Drawable*>* getObjectsOfType(const std::string&);
 
 	void changeGrid(int, int, int, int, Collider*);
+	std::list<Collider*>* getObjectsInGrid(int, int) const;
 private:
 	ObjectManager(int w, int h);
 	std::vector<Drawable*> gameObjects;

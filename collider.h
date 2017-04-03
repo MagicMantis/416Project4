@@ -1,3 +1,6 @@
+#ifndef COLLIDER_H
+#define COLLIDER_H
+
 #include "drawable.h"
 #include "gamedata.h"
 
@@ -7,7 +10,7 @@ public:
 			const Vector2f& vel, float w, float h): 
     	Drawable(n,pos,vel), width(w), height(h), 
     	gridX(pos[0]/Gamedata::getInstance().getXmlInt("grid/width")),
-    	gridY(pos[0]/Gamedata::getInstance().getXmlInt("grid/height")),
+    	gridY(pos[1]/Gamedata::getInstance().getXmlInt("grid/height")),
     	id(Gamedata::getInstance().generateID()) { }
 
 	Collider(const Collider& s) : Drawable(s), width(s.width), height(s.height),
@@ -17,6 +20,11 @@ public:
 	void setWidth(float w) { width = w; }
 	float getHeight() const { return width; }
 	void setHeight(float h) { height = h; }
+
+	float getGridX() const { return gridX; }
+	void setGridX(float x) { gridX = x; }
+	float getGridY() const { return gridY; }
+	void setGridY(float y) { gridY = y; }
 
 	int getID() const { return id; }
 
@@ -28,3 +36,5 @@ private:
 	int gridX, gridY;
 	int id;
 };
+
+#endif

@@ -1,9 +1,9 @@
 #ifndef SPRITE__H
 #define SPRITE__H
 #include <string>
-#include "drawable.h"
+#include "collider.h"
 
-class Sprite : public Drawable {
+class Sprite : public Collider {
 public:
   Sprite(const std::string&);
   Sprite(const std::string&, const Vector2f&);

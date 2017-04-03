@@ -17,7 +17,8 @@ Gamedata::Gamedata(const string& fn ) :
   mouseX(0),
   mouseY(0),
   rightKey(false),
-  leftKey(false)
+  leftKey(false),
+  instance_id(0)
 { }
 
 float Gamedata::getRandInRange(int min, int max) const {

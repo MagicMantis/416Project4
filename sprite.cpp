@@ -4,11 +4,13 @@
 #include "renderContext.h"
 
 Sprite::Sprite(const std::string& name) :
-  Drawable(name,
+  Collider(name,
            Vector2f(Gamedata::getInstance().getXmlInt(name+"/startLoc/x"), 
                     Gamedata::getInstance().getXmlInt(name+"/startLoc/y")), 
            Vector2f(Gamedata::getInstance().getXmlInt(name+"/speedX"), 
-                    Gamedata::getInstance().getXmlInt(name+"/speedY")) 
+                    Gamedata::getInstance().getXmlInt(name+"/speedY")),
+            Gamedata::getInstance().getXmlFloat(name+"/width"), 
+            Gamedata::getInstance().getXmlFloat(name+"/height")
            ),
   frame( RenderContext::getInstance()->getFrame(name) ),
   worldWidth(Gamedata::getInstance().getXmlInt("world/width")),
@@ -18,7 +20,9 @@ Sprite::Sprite(const std::string& name) :
 { }
 
 Sprite::Sprite(const std::string& name, const Vector2f& pos) :
-  Drawable(name, pos, Vector2f(0,0)),
+  Collider(name, pos, Vector2f(0,0),
+      Gamedata::getInstance().getXmlFloat(name+"/width"), 
+      Gamedata::getInstance().getXmlFloat(name+"/height")),
   frame( RenderContext::getInstance()->getFrame(name) ),
   worldWidth(Gamedata::getInstance().getXmlInt("world/width")),
   worldHeight(Gamedata::getInstance().getXmlInt("world/height")),
@@ -27,7 +31,7 @@ Sprite::Sprite(const std::string& name, const Vector2f& pos) :
 { }
 
 Sprite::Sprite(const Sprite& s) :
-  Drawable(s), 
+  Collider(s), 
   frame(s.frame),
   worldWidth(Gamedata::getInstance().getXmlInt("world/width")),
   worldHeight(Gamedata::getInstance().getXmlInt("world/height")),
@@ -36,7 +40,7 @@ Sprite::Sprite(const Sprite& s) :
 { }
 
 Sprite& Sprite::operator=(const Sprite& rhs) {
-  Drawable::operator=( rhs );
+  Collider::operator=( rhs );
   frame = rhs.frame;
   worldWidth = rhs.worldWidth;
   worldHeight = rhs.worldHeight;
