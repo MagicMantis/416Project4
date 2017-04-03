@@ -52,18 +52,18 @@
 
 <farbuildings>
   <file>images/bkgnd.png</file>
-  <factor>0</factor>
+  <factor>50</factor>
   <transparency>false</transparency>
 </farbuildings>
 
 <backbuildings>
-  <file>images/back-buildings2.png</file>
+  <file>images/back-buildings3.png</file>
   <factor>2</factor>
   <transparency>false</transparency>
 </backbuildings>
 
 <foreground>
-  <file>images/foreground2.png</file>
+  <file>images/foreground3.png</file>
   <factor>1</factor>
   <transparency>false</transparency>
 </foreground>
