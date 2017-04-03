@@ -26,6 +26,9 @@ public:
 	float getGridY() const { return gridY; }
 	void setGridY(float y) { gridY = y; }
 
+  	float getDistance(const Collider*) const;
+  	float getDistance(const Vector2f&) const;
+
 	int getID() const { return id; }
 
 	virtual void draw() const = 0;

@@ -17,6 +17,7 @@ public:
 	void stop();
 private:
 	bool onGround();
+	float fear;
 };
 
 #endif

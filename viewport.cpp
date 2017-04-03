@@ -15,7 +15,9 @@ Viewport::Viewport() :
   viewWidth(gdata.getXmlInt("view/width")), 
   viewHeight(gdata.getXmlInt("view/height")),
   objWidth(0), objHeight(0),
-  objectToTrack(NULL) 
+  rd(), mt(rd()),
+  jitterScale(0.0),
+  objectToTrack(NULL)
 {}
 
 void Viewport::setObjectToTrack(const Drawable *obj) { 
@@ -41,6 +43,12 @@ void Viewport::update() {
 
   position[0] = (x + objWidth/2) - viewWidth/2;
   position[1] = (y + objHeight/2) - viewHeight/2;
+
+  //jitter
+  std::normal_distribution<float>dist(0.0,jitterScale);
+  position[0] += dist(mt);
+  position[1] += dist(mt);
+  
   if (position[0] < 0) position[0] = 0;
   if (position[1] < 0) position[1] = 0;
   if (position[0] > (worldWidth - viewWidth)) {
@@ -49,4 +57,5 @@ void Viewport::update() {
   if (position[1] > (worldHeight - viewHeight)) {
     position[1] = worldHeight-viewHeight;
   }
+
 }

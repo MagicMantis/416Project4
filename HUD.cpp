@@ -26,7 +26,7 @@ void HUD::draw(int fps) const {
 		io.writeText(strm.str(), x+5, y+40);
 		io.writeText("A: run left", x+5, y+70);
 		io.writeText("D: run right", x+5, y+100);
-		io.writeText("Space: jump", x+5, y+130);
+		io.writeText("W: jump", x+5, y+130);
 		io.writeText("Avoid the sludge!", x+5, y+170);
 	}
 }

@@ -90,13 +90,13 @@ void Engine::play() {
           case SDLK_q:
             done = true;
             break;
-          case SDLK_RIGHT:
+          case SDLK_d:
             Gamedata::getInstance().updateRight(true);
             break;
-          case SDLK_LEFT:
+          case SDLK_a:
             Gamedata::getInstance().updateLeft(true);
             break;
-          case SDLK_SPACE:
+          case SDLK_w:
             p = (Player*) ObjectManager::getInstance().getObject("player");
             p->jump();
             break;
@@ -134,10 +134,10 @@ void Engine::play() {
       }
       if (event.type == SDL_KEYUP) {        
         switch (event.key.keysym.sym) {
-          case SDLK_RIGHT:
+          case SDLK_d:
             Gamedata::getInstance().updateRight(false);
             break;
-          case SDLK_LEFT:
+          case SDLK_a:
             Gamedata::getInstance().updateLeft(false);
             break;
           default:

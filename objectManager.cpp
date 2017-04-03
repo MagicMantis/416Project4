@@ -1,6 +1,7 @@
 #include <random>
 #include <iostream>
 #include <iomanip>
+#include <algorithm>
 #include "objectManager.h"
 #include "sludge.h"
 #include "smog.h"
@@ -20,25 +21,31 @@ void ObjectManager::initObjects() {
 
 	int sludgeCount = Gamedata::getInstance().getXmlInt("sludgeCount")/2;
   	float u = Gamedata::getInstance().getXmlFloat("sludge/radius"); //Mean size
-  	constexpr float d = 0.5f; //Std deviation
+  	float d = Gamedata::getInstance().getXmlFloat("sludge/deviation"); //Std deviation
 	
 	std::random_device rd;
 	std::mt19937 mt(rd());
 	std::normal_distribution<float>dist(u,d);
 
+	std::vector<Sludge*> tempVec;
 	for (int i = 0; i < sludgeCount; i++) {
 		Vector2f pos;
 		pos[0] = Gamedata::getInstance().getRandInRange(-200, 0);
 		pos[1] = Gamedata::getInstance().getRandInRange(200, 400);
-		addObject( new Sludge(pos, dist(mt)) );
+		tempVec.push_back( new Sludge(pos, dist(mt)) );
 	}
 	for (int i = 0; i < sludgeCount; i++) {
 		Vector2f pos;
 		int width = Gamedata::getInstance().getXmlInt("world/width");
 		pos[0] = Gamedata::getInstance().getRandInRange(width, width+200);
 		pos[1] = Gamedata::getInstance().getRandInRange(200, 400);
-		addObject( new Sludge(pos, dist(mt)) );
+		tempVec.push_back( new Sludge(pos, dist(mt)) );
 	}
+
+	sort(tempVec.begin(), tempVec.end(), [](const Sludge* const a, const Sludge* const b) 
+		{ return a->getRadius() < b->getRadius(); });
+	for (Sludge* s : tempVec) addObject( s );
+
 	int rainCount = Gamedata::getInstance().getXmlInt("rain/count");
 	float rainSpeed = Gamedata::getInstance().getXmlFloat("rain/speed");
 	int w = Gamedata::getInstance().getXmlInt("view/width");

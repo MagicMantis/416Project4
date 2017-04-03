@@ -1,5 +1,7 @@
 #ifndef VIEWPORT__H
 #define VIEWPORT__H
+
+#include <random>
 #include "drawable.h"
 #include "gamedata.h"
 
@@ -15,6 +17,9 @@ public:
   float getY() const  { return position[1]; }
   void  setY(float y) { position[1] = y; }
 
+  float getJitter() const { return jitterScale; }
+  void setJitter(float j) { jitterScale = j; }
+
   void setObjectToTrack(const Drawable *obj);
   const Drawable* getObjectToTrack() const { return objectToTrack; } 
 
@@ -27,6 +32,9 @@ private:
   int viewHeight;
   int objWidth;
   int objHeight;
+  std::random_device rd;
+  std::mt19937 mt;
+  float jitterScale;
   
   const Drawable *objectToTrack;
 

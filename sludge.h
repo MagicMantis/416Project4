@@ -9,6 +9,8 @@ public:
 	Sludge& operator=(const Sludge&) = delete;
 	~Sludge() { }
 
+	float getRadius() const { return radius; }
+
 	// void draw() const;
 	void update(Uint32 ticks);
 private:

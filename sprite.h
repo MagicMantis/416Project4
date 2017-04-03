@@ -19,8 +19,6 @@ protected:
   int getWorldHeight() const { return worldHeight; }
   int getFrameWidth() const { return frameWidth; }
   int getFrameHeight() const { return frameHeight; }
-  float getDistance(const Sprite*) const;
-  float getDistance(const Vector2f&) const;
 private:
   const Frame * frame;
   int worldWidth;

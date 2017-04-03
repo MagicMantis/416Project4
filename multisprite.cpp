@@ -11,11 +11,13 @@ void MultiSprite::advanceFrame(Uint32 ticks) {
 }
 
 MultiSprite::MultiSprite( const std::string& name) :
-  Drawable(name, 
+  Collider(name, 
            Vector2f(Gamedata::getInstance().getXmlInt(name+"/startLoc/x"), 
                     Gamedata::getInstance().getXmlInt(name+"/startLoc/y")), 
            Vector2f(Gamedata::getInstance().getXmlInt(name+"/speedX"),
-                    Gamedata::getInstance().getXmlInt(name+"/speedY"))
+                    Gamedata::getInstance().getXmlInt(name+"/speedY")),
+            Gamedata::getInstance().getXmlFloat(name+"/width"), 
+            Gamedata::getInstance().getXmlFloat(name+"/height")
            ),
   frames( RenderContext::getInstance()->getFrames(name) ),
 
@@ -30,7 +32,7 @@ MultiSprite::MultiSprite( const std::string& name) :
 { }
 
 MultiSprite::MultiSprite(const MultiSprite& s) :
-  Drawable(s), 
+  Collider(s), 
   frames(s.frames),
   currentFrame(s.currentFrame),
   numberOfFrames( s.numberOfFrames ),

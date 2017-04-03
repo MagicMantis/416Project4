@@ -3,9 +3,9 @@
 #include <string>
 #include <vector>
 #include <cmath>
-#include "drawable.h"
+#include "collider.h"
 
-class MultiSprite : public Drawable {
+class MultiSprite : public Collider {
 public:
   MultiSprite(const std::string&);
   MultiSprite(const MultiSprite&);

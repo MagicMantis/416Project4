@@ -2,6 +2,7 @@
 #include "objectManager.h"
 
 void Collider::update(Uint32 ticks) {
+	if (ticks == 0) return;
 	int newGridX = gridX, newGridY = gridY;
 	if (getX() >= (gridX+1)*Gamedata::getInstance().getXmlInt("grid/width")) {
 		newGridX = gridX+1;
@@ -20,4 +21,12 @@ void Collider::update(Uint32 ticks) {
 		gridX = newGridX;
 		gridY = newGridY;
 	}
+}
+
+float Collider::getDistance(const Collider* s) const {
+  return sqrt(pow(getX()-s->getX(), 2) + pow(getY()-s->getY(), 2));
+}
+
+float Collider::getDistance(const Vector2f& v) const {
+  return sqrt(pow(getX()-v[0], 2) + pow(getY()-v[1], 2));
 }
