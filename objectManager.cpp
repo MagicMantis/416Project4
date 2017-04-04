@@ -19,6 +19,22 @@ ObjectManager& ObjectManager::getInstance() {
 void ObjectManager::initObjects() {
 	addObject( new Player("player") );
 
+	//generate rain effects
+	int rainCount = Gamedata::getInstance().getXmlInt("rain/count");
+	float rainSpeed = Gamedata::getInstance().getXmlFloat("rain/speed");
+	int w = Gamedata::getInstance().getXmlInt("view/width");
+	int h = Gamedata::getInstance().getXmlInt("view/height");
+	std::vector<Rain*> rain_vec;
+	for (int i = 0; i < rainCount; i++) {
+		int len = rand()%4+3;
+		Rain* r = new Rain((float)i*((float)w/(float)rainCount), (rand()%h), len, h*(.9)+h*(.1*len/6), rainSpeed);
+		rain_vec.push_back(r);
+	}
+	for (Rain* r : rain_vec) { 
+		if (r->getLength() <= 3) addObject(r);
+	}
+
+	//generate sludge balls
 	int sludgeCount = Gamedata::getInstance().getXmlInt("sludgeCount")/2;
   	float u = Gamedata::getInstance().getXmlFloat("sludge/radius"); //Mean size
   	float d = Gamedata::getInstance().getXmlFloat("sludge/deviation"); //Std deviation
@@ -46,12 +62,9 @@ void ObjectManager::initObjects() {
 		{ return a->getRadius() < b->getRadius(); });
 	for (Sludge* s : tempVec) addObject( s );
 
-	int rainCount = Gamedata::getInstance().getXmlInt("rain/count");
-	float rainSpeed = Gamedata::getInstance().getXmlFloat("rain/speed");
-	int w = Gamedata::getInstance().getXmlInt("view/width");
-	int h = Gamedata::getInstance().getXmlInt("view/height");
-	for (int i = 0; i < rainCount; i++) {
-		addObject(new Rain(i*(w/rainCount), (rand()%h), rand()%3+3, h, rainSpeed));
+	//finish effects
+	for (Rain* r : rain_vec) { 
+		if (r->getLength() > 3) addObject(r);
 	}
 	for (int i = 0; i < 20; i++) {
 		addObject( new Smog() );

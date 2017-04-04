@@ -9,6 +9,8 @@ public:
 		Drawable("rain", Vector2f(xp, yp), Vector2f(-1, float(len)*s)), length(len), wrap(w) {}
 	~Rain();
 
+	int getLength() const { return length; }
+
 	void update(Uint32 ticks);
 	void draw() const;
 	const Frame* getFrame() const { return nullptr; }

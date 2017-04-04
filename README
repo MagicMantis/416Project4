@@ -2,12 +2,35 @@ Name: Joseph Savold
 
 Clemson Email Address: jsavold@clemson.edu
 
-Project no: 1
+Project no: 4
 
-Project due date: 03/10/2017
+Project due date: 04/04/2017
 
-Project description: Depiction of a nightmare in which the protagonist is running from a bunch of slime balls. The slime balls collide with each other. I found my background and my running man on OpenGameArt. I coded the slime physics from scratch. I also made changes to the framework such that all objects are managed by an ObjectManager singleton class instead of the Engine.
+Project Summary: 
+	
+	Depiction of a nightmare in which the protagonist is running from a bunch of slime balls. The slime balls collide with each other and bounce off of each other much like particles. Collisions are optimized by spacial hasing using a grid of STL lists.
 
-The easiest part of this project: Making changes to the code that were specified in the project instructions.
+	Painters algorithm is applied for both the rain and the slime balls, though the slime balls are not meant to give a sense of depth, so it is hard to tell. Code for creating objects can be found in the initObjects method of the ObjectManager class.
 
-Problems that I had in completing this project: Getting my video to run smoothly
+Idea for the final project:
+
+	Nightmare is supposed to be a game about someone having a nightmare. If the player gets too scared, they wake up (which is losing the game). Normally waking up would be a good thing, but since the player does not know they are dreaming they are trying not to get killed.
+
+	The player will run from sludge enemies, jumping on platforms, trying not to fall in sludge pools. At the end of a level the player will reach a light and the rain will stop. Then they will wake up without having died in their dream.
+
+	Possible actions in the game will be (will not all be implemented):
+	* rolling to maintain momentum and shake off the clinging sludge balls
+	* wall jumping to add some depth to the platforming
+	* double jumping
+
+Sources: 
+
+	I found some of the background and my running man on OpenGameArt. I made the sludge sprites, clouds of smoke, and the rain.
+
+The easiest part of this project: 
+
+	I had already mostly completed the player class during last project, so touching that up was the easiest part.
+
+Problems that I had in completing this project: 
+
+	I believe my keyboard is broken in that SDL will create multiple events for a single keypress. Note that this is different from keybounce. The key will create multiple keypress event randomly as it is being held (not continuously). I was unable to fix this. It runs fine on any other machine that I have run it on.
